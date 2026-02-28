@@ -1,0 +1,247 @@
+/* a4stylesheet.css
+   A4: Intro CSS Fill-in Template
+   Instructions: rename this file to styles.css and complete each TODO block.
+*/ 
+
+/* ===== Base styles (mostly done) ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* HEADER */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  /* TODO A */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.brand {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.brand .dot {
+  /* TODO B */
+  color: #2a6df4;
+}
+
+.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+
+.site-nav a {
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #444;
+}
+
+/* HERO */
+.hero {
+  /* TODO C */
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=60");
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-content {
+  /* TODO D */
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.hero h1 {
+  /* TODO E */
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  font-size: 46px;
+  letter-spacing: 0.06em;
+}
+
+.hero-subhead {
+  /* TODO F */
+  font-size: 20px;
+  color: #ccc;
+  max-width: 580px;
+  margin: 0 auto 28px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.btn:hover { opacity: 0.82; text-decoration: none; }
+
+.btn-dark {
+  /* TODO G */
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #222;
+}
+
+.btn-outline {
+  /* TODO H */
+  border: 2px solid #2a6df4;
+  color: #2a6df4;
+  background: transparent;
+}
+
+/* FEATURES */
+.features { padding: 52px 0; }
+.features .section-title { margin-bottom: 32px; }
+
+.features-grid {
+  /* TODO I */
+  display: flex;
+  gap: 26px;
+}
+
+.feature {
+  /* TODO J */
+  flex: 1;
+  text-align: center;
+}
+
+.feature img { margin: 16px auto 0; border-radius: 6px; }
+.feature h3 { margin: 0 0 8px; font-size: 16px; text-transform: uppercase; }
+
+/* HISTORY */
+.featured { padding: 52px 0; background: #f7f7f7; }
+
+.section-title {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-lede {
+  text-align: center;
+  max-width: 680px;
+  margin: 10px auto 28px;
+  color: #666;
+  font-size: 14px;
+}
+
+.media {
+  background: #eaeaea;
+  border: 1px solid #ddd;
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* SECONDARY */
+.secondary { padding: 52px 0; }
+.secondary .section-title { margin-bottom: 28px; }
+
+.secondary-grid {
+  /* TODO K */
+  display: flex;
+  gap: 26px;
+}
+
+.card {
+  /* TODO L */
+  flex: 1;
+  border: 1px solid #eee;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-text { padding: 22px; }
+.card-text h3 { margin: 0 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; }
+.card-text p { margin: 0 0 8px; color: #666; font-size: 13px; }
+.card-text ul { margin: 0 0 14px; color: #666; font-size: 13px; }
+
+.card-image {
+  min-height: 200px;
+  /* TODO M */
+  background-size: cover;
+  background-position: center;
+}
+
+.img-a { background-image: url("https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=800&q=60"); }
+.img-b { background-image: url("https://images.unsplash.com/photo-1569517282132-25d22f4573e6?auto=format&fit=crop&w=800&q=60"); }
+
+/* CTA */
+.cta { background: #f7f7f7; padding: 52px 0; border-top: 1px solid #eee; }
+
+.cta-inner {
+  /* TODO N */
+  text-align: center;
+}
+
+.cta-inner h2 { margin: 0 0 10px; font-size: 28px; text-transform: uppercase; }
+.cta-inner p { color: #555; margin: 0 0 22px; }
+
+/* FOOTER */
+.site-footer { background: #fafafa; border-top: 1px solid #eee; padding: 32px 0; }
+
+.footer-inner {
+  /* TODO O */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.footer-left { max-width: 360px; color: #666; font-size: 12px; }
+.footer-left p { margin: 0 0 6px; }
+.footer-left a { color: #2a6df4; }
+
+.footer-cols { display: flex; gap: 28px; }
+.footer-col h4 { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+.footer-col a { display: block; font-size: 12px; color: #666; margin: 6px 0; }
+.footer-col a:hover { color: #2a6df4; text-decoration: none; }
+
+
+
+
+
